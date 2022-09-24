@@ -14,7 +14,7 @@ class Cards:
             for n in self.numbers:
                 self.deck.append((f'{n} of {s}'))
 
-#Crea a los jugadores (nombre, sus cartas y puntos)
+#Creates players (name, cards y score)
 class Players():
     players = []
     
