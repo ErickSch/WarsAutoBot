@@ -3,7 +3,7 @@ from time import sleep
 
 
 
-#Crea una baraja
+#Creates a deck
 class Cards:
     numbers = ['2', '3', '4', '5', '6', '7', '8', '9', '10', "Jack", "Queen", "King", 'Ace']
     suits = ['spades', 'hearts', 'diamonds', 'clubs']
@@ -24,7 +24,7 @@ class Players():
         self.cards = []
         self.points = 0
 
-#Asigna jugadores avariables y distribuye cartas
+#Creates players and deals cards
 class Game(Cards):
     player_1 = Players()
     player_2 = Players()
@@ -50,7 +50,7 @@ class Game(Cards):
         print(f"Player 1: {len(self.player_1.cards)} cards")
         print(f"Player 2: {len(self.player_2.cards)} cards")
 
-#Crea y aplica las mecánicas, cuenta puntos y decide ganadores
+#Initialices and applies game mechanics, starts scores and chooses winners.
 class Play(Game):
 
     def __init__(self):
@@ -100,13 +100,6 @@ class Play(Game):
             print("Is a draww!!")
 
    
-        
-
-    
-    
-#Cards: Crear baraja
-#Players: Crear jugadores, repartir baraja
-# Game: Mecanicas con la baraja, decir ganador
 
 
 Play()
